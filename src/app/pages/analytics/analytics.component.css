@@ -1,7 +1,7 @@
 .charts-container{
     padding:8.5vw 2vw 2vw; 
 }
-.chart-one{
+.line-chart{
     background-color:white;
     border-radius:0.3vw;
     border:1px solid rgb(228, 225, 225);
@@ -22,7 +22,7 @@
 .zone-container{
     padding:0vw 3vw 4vw;
 }
-.chart-two{
+.bar-chart{
     width: 40%; 
     height: 40%; 
     display: inline-block;
@@ -31,7 +31,7 @@
     border:1px solid rgb(228, 225, 225);
     margin-right:2vw;
 }
-.chart-three{
+.doughnut-chart{
     width: 40%; 
     height: 40%; 
     display: inline-block;

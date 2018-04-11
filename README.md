@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
+## Frontend Test project using Angular
+    - Run 'npm install -g @angular/cli' to install the Angular CLI globally.
+    - Run 'npm install' to install the plugins and dependencies.
+    - Run 'ng serve --open' to run on dev server. Navigate to `http://localhost:4200/`. 
+
+##Pages
+     Analytics - On the regular time interval, page keeps on updating the chart. Time Interval is 30sec.
+     News      - Displays the static news contents such as title, description and image.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +34,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+

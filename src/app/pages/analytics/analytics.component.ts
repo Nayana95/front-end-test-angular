@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
 import { DataServiceService}  from '../../providers/data-service.service';
+// importing Chart.js
 import * as Chart from 'chart.js';
+
 @Component({
   selector: 'app-analytics',
   templateUrl: './analytics.component.html',
@@ -21,6 +22,8 @@ export class AnalyticsComponent implements OnInit {
   pieLabels = [];
   pieColors = [];
   pieData = [];
+  
+  //defining the chart data
   pieChartConfig = {
    type: 'doughnut',
    data: {
@@ -35,10 +38,12 @@ export class AnalyticsComponent implements OnInit {
      responsive: true
    }
  };
+
  barChartData = {
   labels: ['1'],
   datasets: this.dataCountSets
 };
+
 lineChartConfig = {
   type: 'line',
   data: {
@@ -77,11 +82,12 @@ lineChartConfig = {
     }
   }
   };
+
   ngOnInit() {
     this.getData()
   }
 
-  
+  //getting the data from provider
   getData() {
     var data;
     data = this.dataService.getJSON().subscribe(res => {
@@ -91,6 +97,7 @@ lineChartConfig = {
     err => console.log(err));
   }
 
+  //creating the chart
   initChartData(){
     this.analyticsData.forEach(data => {
       var color = [this.generateRandomColor(), this.generateRandomColor()];
@@ -144,9 +151,11 @@ lineChartConfig = {
 
     this.updateDataSet();
   }
+
+  //updating the chart data
   updateDataSet(){
     setInterval(()=>{
-      this.baseTimeStamp += 60000;
+      this.baseTimeStamp += 30000;
       var d = new Date(this.baseTimeStamp);
       this.lineChartConfig.data.labels.push(d.getHours() + ":" + d.getMinutes());
       this.lineChartConfig.data.labels.splice(0,1);
@@ -166,8 +175,10 @@ lineChartConfig = {
         data.data[0] = 10 * Math.random();
       });
       this.barChart.update();
-    }, 60000)
+    }, 30000)
   }
+
+  //generating random colors
   generateRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';

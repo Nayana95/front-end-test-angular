@@ -1,5 +1,6 @@
+
 <div>
- <!-- side-bar -->
+ <!-- side-bar starts -->
   <nav class="app-font-family sidebar-css side-bar-block page-background top-dist" style="z-index:3;width:250px;" id="mySidebar">
     <div class="app-component-container logo-background app-component-display-container app-component-padding-16">
       <i class="fa fa-remove appcomponent-hide-large appcomponent-button appcomponent-display-topright"></i>
@@ -41,8 +42,8 @@
       </div>   
     </a> 
   </nav> 
-
-  <!-- header -->
+<!-- side-bar ends -->
+  <!-- header starts-->
   <header class="app-font-family top-header-container screen-xlarge">
     <img style="padding: 25px 0px;" (click)="openMenu()" src="./assets/images/r-3-l-logo-application-02.png">
     <p class="appcomonent-right">
@@ -50,17 +51,20 @@
       <i> <img src="./assets/images/shape.svg"/> </i>
     </p>
   </header>
+  <!-- header ends-->
  
   <!-- overlay component -->
   <div class=" app-font-family appcomponet-overlay appcomponent-hide-large" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
    
-  <!-- component container -->
+  <!-- component container starts-->
   <div class="app-font-family" style="margin-left:250px">
     <div class="app-font-family appcomponent-hide-large" style="margin-top:83px"></div>
     <div>
+      <!-- loaded component -->
       <router-outlet> </router-outlet>
     </div>
   </div>
+  <!-- component container ends-->
 
 </div>
 
