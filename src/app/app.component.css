@@ -1,0 +1,289 @@
+body{
+    margin:0px !important;
+    padding:0px !important;
+}
+.app-font-family{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rock-app-content{
+    margin:auto;
+    color:white !important;
+}
+.top-dist{
+    top:0;
+}
+.sidebar-css{
+    height:100%;
+    width:200px;
+    background-color:#2f323a;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+}
+.screen-xlarge{
+    font-size:24px!important;
+} 
+.top-header-container:after,.top-header-container:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+.logo-background{
+    background-color: #1e2025;
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+}
+.top-header-container{
+    padding:0.01em 16px;
+    background-color:#2f323a;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.side-bar-block{
+    width:100%
+}
+.side-bar-button{
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
+.app-component-container{
+    content:"";
+    display:table;
+    clear:both
+}
+.app-component-display-container{
+    position:relative;
+}
+.app-component-padding-16{
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+}
+.appcomponent-hide-large{
+    display:none!important;
+}
+.side-bar-button-content{
+    display:flex;
+    align-items:center;
+}
+.appcomponent-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.appcomponent-button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.appcomponent-button{
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
+.appcomponent-button{
+    white-space:normal;}
+.appcomponent-display-topright{
+    position:absolute;right:0;top:0}
+.appcomponent-wide{
+    letter-spacing:4px}
+.appcomponet-overlay{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:2;
+}
+.appcomponent-margin-right{
+    margin-right:16px!important;
+    font-style:normal !important;
+    color:white;
+    font-size:12px;
+}
+.appcomonent-right{
+    float:right!important;
+}
+.appcomonent-left{
+    float:left!important;
+}
+.appcomponent-large{
+    font-size:18px!important;
+}
+.appcomponent-text-grey{
+    color:#757575!important;
+}
+.appcomponent-bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+}
+.close-menu{
+    color:white;
+    font-weight:bold;
+    width:100%;
+}
+.close-menu:hover{
+    background-color: #1e2025;
+}
+.appcomponent-padding{
+    padding:8px 16px!important;
+}
+.appcomponent-top{
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+.appcomponent-top{
+    top:0;
+}
+.appcomponent-padding-24{
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+}
+.appcomponent-wide{
+    letter-spacing:4px;
+}
+.appcomponent-bar{
+    display:inline-block;
+    width:auto;
+}
+.appcomponent-bar{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+}
+.appcomponent-bar{
+    position:static;
+    float:left;
+}
+.appcomponent-bar{
+    white-space:normal;
+}
+.appcomponent-black{
+    color:#fff!important;
+    background-color:#000!important;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-container{
+    padding: 20px 20px;
+}
+.card-header{
+    display: flex;
+    align-items:center;
+    padding: 10px 20px;
+    font-size:11px;
+}
+.navigate-content{
+    padding: 8px 0px;
+    border-bottom: 1px solid #cecece;
+    color: #cecece;
+    margin: 0px 16px 10px;
+}
+.card-header-content{
+    color: black;
+    text-align: justify;
+    padding: 0px 20px 10px;
+    font-size:16px;
+}
+.card-body-content{
+    color:rgb(59, 58, 58);
+    text-align: justify;
+    padding: 10px 15px 30px;
+    font-size:15px;
+}
+.card-footer{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border-top: 1px solid #cecece;
+}
+.left-content{
+    text-align:left;
+    color: #7cb2ed;
+    flex:1;
+    font-weight: bold;
+}
+.right-content{
+    text-align:right;
+    color: #cecece;
+    flex:1;
+}
+.side-bar-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:left;
+    cursor:pointer;
+    white-space:nowrap;
+    color: white;
+}
+
+.page-background:hover{
+    color:#000!important;
+    background-color:#2f323a!important;
+}
+.side-bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+.rock-icons{
+    margin: auto;
+    display: block;
+}
+.side-bar-button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.side-bar-button:disabled{
+    cursor:not-allowed;
+    opacity:0.3
+}
+.side-bar-button:hover{
+    background-color: #1e2025;
+    color:white;
+}
+.side-bar-button:active{
+    background-color: #1e2025;
+}

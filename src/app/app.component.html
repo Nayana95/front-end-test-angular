@@ -1,20 +1,69 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div>
+ <!-- side-bar -->
+  <nav class="app-font-family sidebar-css side-bar-block page-background top-dist" style="z-index:3;width:250px;" id="mySidebar">
+    <div class="app-component-container logo-background app-component-display-container app-component-padding-16">
+      <i class="fa fa-remove appcomponent-hide-large appcomponent-button appcomponent-display-topright"></i>
+      <h3 (click)="openMenu()" class="appcomponent-wide">
+        <b><img class="rock-icons" src="./assets/images/r-3-l-logo-application.svg"></b>
+      </h3>
+    </div>
+    <div class="navigate-content">NAVIGATE</div>
+    <div class="appcomponet-large appcomponent-text-grey" style="font-weight:bold;margin-bottom:20%;">
+      <a routerLink = "analytics" class="side-bar-item side-bar-button">
+        <div class="side-bar-button-content">
+          <img style="margin-right:1vw;" src="./assets/images/analitycs.svg">
+          <div>Analytics</div> 
+        </div>
+      </a>
+      <a  routerLink = "news" class="side-bar-item side-bar-button">
+        <div class="side-bar-button-content">
+          <img style="margin-right:1vw;" src="./assets/images/newspaper-o.svg">
+          <div>News</div> 
+        </div>
+      </a>
+      <a href="#" class="side-bar-item side-bar-button">
+        <div class="side-bar-button-content">
+          <img style="margin-right:1vw;" src="./assets/images/board-brief.svg">
+          <div>Board Brief</div> 
+        </div>
+      </a>
+      <a href="#" class="side-bar-item side-bar-button">
+        <div class="side-bar-button-content">
+          <img style="margin-right:1vw;" src="./assets/images/briefcase.svg">
+          <div>Briefcase</div> 
+        </div>   
+      </a>
+    </div>
+    <a  (click)="closeMenu()" class="appcomponent-bar-item appcomponent-button appcomponent-padding close-menu">
+      <div class="side-bar-button-content">
+        <img style="margin-right:1vw;" src="./assets/images/angle-double-left.svg">
+        <div>Close menu</div> 
+      </div>   
+    </a> 
+  </nav> 
+
+  <!-- header -->
+  <header class="app-font-family top-header-container screen-xlarge">
+    <img style="padding: 25px 0px;" (click)="openMenu()" src="./assets/images/r-3-l-logo-application-02.png">
+    <p class="appcomonent-right">
+      <i class="appcomponent-margin-right">Admin Name</i>
+      <i> <img src="./assets/images/shape.svg"/> </i>
+    </p>
+  </header>
+ 
+  <!-- overlay component -->
+  <div class=" app-font-family appcomponet-overlay appcomponent-hide-large" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+   
+  <!-- component container -->
+  <div class="app-font-family" style="margin-left:250px">
+    <div class="app-font-family appcomponent-hide-large" style="margin-top:83px"></div>
+    <div>
+      <router-outlet> </router-outlet>
+    </div>
+  </div>
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+
 
